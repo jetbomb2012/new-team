@@ -37,6 +37,7 @@
 # XCH
 # xch1km6haeqcqknxkhwj5g4asd0u3na0026ucxdzzl586h0mn0rqj0gqwpcz7g
 # 會長管理技術支援(Msdn.net): jetbomb2012@gmail.com 
+# <a href="mailto:jetbomb2012@gmail.com">會長信箱</a>
 
 <a href="https://www.youtube.com/">這個連結</a>會連到 YouTube<br>
 <a href="https://www.google.com/">這個連結</a>會連到 Google<br>
