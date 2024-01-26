@@ -31,7 +31,6 @@
 # 御翹楚           共計7萬
 # 滿嬴錢         +3萬(會長獎)
 # 網聚黑澀會網聚(一)
-
 # <a href="mailto:tfftfftff7788@yahoo.com.tw">會外事務</a>
 # XCH
 # xch1km6haeqcqknxkhwj5g4asd0u3na0026ucxdzzl586h0mn0rqj0gqwpcz7g
