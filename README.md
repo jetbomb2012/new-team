@@ -23,12 +23,13 @@
 # 公會戰事
 # 1.獎金累計
 # 獅爺LEO     共計55萬
-# lingoce    共計20萬 ( www.lingoce.top 一年期)
+# lingoce    共計20萬 ( www.lingoce.top 一年期) +3萬(會長獎)
 # 酷ano      共計15萬
 # (茫)         共計11萬
 # 娃愛妳       共計20萬
 # 夜千雪       共計1萬
 # 御翹楚           共計7萬
+# 滿嬴錢         +3萬(會長獎)
 # 網聚黑澀會網聚(一)
 # 
 # <a href="mailto:tfftfftff7788@yahoo.com.tw">會外事務</a>
