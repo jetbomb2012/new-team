@@ -2,7 +2,7 @@
 # <img src="flag.jpg">新黑澀會
 # 傑邦上兵繼任會長
 # 1. 新黑澀會, 勝率未達50%, 未經允許, 不得參賽!
-# <a href="https://www.youtube.com/watch?v=5EJb9deDgzs)">會長勝率七成直播</a>
+# <a href="https://www.youtube.com/channel/UC-PHMjrhrDjeInhwoXv4pxA/live))">會長勝率七成直播</a>
 
 # 會長戰功: 戲谷名人堂高手
 
