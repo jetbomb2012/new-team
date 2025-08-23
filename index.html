@@ -15,12 +15,7 @@
     .divider { border-top: 1px solid #0ff; margin: 40px 0; }
   </style>
 </head>
-  <script>
-  document.addEventListener('click', function () {
-    const audio = new Audio('/assets/audio/venusj_0500_intro.mp3');
-    audio.play();
-  }, { once: true });
-</script>
+  
 <body>
 
   <h1>0500空降模組已啟動</h1>
@@ -62,8 +57,16 @@
   <div class="divider"></div>
 
   <p class="pressure">部署不是選項，是命令。0500，現在開始。</p>
-
+<script>
+  document.addEventListener('click', function () {
+    const audio = new Audio('/assets/audio/venusj_0500_intro.mp3');
+    audio.volume = 1;
+    audio.muted = false;
+    audio.play();
+  }, { once: true });
+</script>
 </body>
 
 </html>
+
 
