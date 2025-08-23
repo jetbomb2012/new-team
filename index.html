@@ -23,6 +23,16 @@
     audio.play();
   }, { once: true });
 </script>
+  <script>
+  document.addEventListener('click', function () {
+    const audio = new Audio('/assets/audio/venusj_0500_intro.mp3');
+    audio.volume = 1;
+    audio.muted = false;
+    audio.play().catch(function(error) {
+      console.error('播放失敗:', error);
+    });
+  }, { once: true });
+</script>
 <body>
 
   <h1>0500空降模組已啟動</h1>
@@ -75,6 +85,7 @@
 </body>
 
 </html>
+
 
 
 
