@@ -15,6 +15,14 @@
     .divider { border-top: 1px solid #0ff; margin: 40px 0; }
   </style>
 </head>
+  <script>
+  window.addEventListener('DOMContentLoaded', function () {
+    const audio = new Audio('/assets/audio/venusj_0500_intro.mp3');
+    audio.play().catch(() => {
+      // 若瀏覽器阻擋自動播放，則不顯示錯誤
+    });
+  });
+</script>
 <body>
 
   <h1>0500空降模組已啟動</h1>
@@ -58,4 +66,5 @@
   <p class="pressure">部署不是選項，是命令。0500，現在開始。</p>
 
 </body>
+
 </html>
