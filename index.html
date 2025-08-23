@@ -16,12 +16,10 @@
   </style>
 </head>
   <script>
-  window.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('click', function () {
     const audio = new Audio('/assets/audio/venusj_0500_intro.mp3');
-    audio.play().catch(() => {
-      // 若瀏覽器阻擋自動播放，則不顯示錯誤
-    });
-  });
+    audio.play();
+  }, { once: true });
 </script>
 <body>
 
@@ -68,3 +66,4 @@
 </body>
 
 </html>
+
