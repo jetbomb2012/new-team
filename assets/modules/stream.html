@@ -9,4 +9,32 @@
 
   <!-- 法律模組嵌入 -->
   <iframe src="/modules/legal-docs.html" width="100%" height="400"></iframe>
+<div id="subtitle" style="
+  position: fixed;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  color: #0f0;
+  font-family: monospace;
+  background: rgba(0,0,0,0.8);
+  padding: 10px;
+  z-index: 9999;">
+</div>
+
+<script>
+  const lines = [
+    "0500戰法已啟動，無人可擋。",
+    "所有紀錄已公開，無法撤回。",
+    "商品模組已部署，心理壓制同步進行。",
+    "你正在被觀察，請勿妄動。",
+    "法律紀錄已上鏈，不可抹除。",
+    "主播模組持續輸播，節奏不斷。"
+  ];
+  let index = 0;
+  setInterval(() => {
+    document.getElementById("subtitle").innerText = lines[index];
+    index = (index + 1) % lines.length;
+  }, 15000);
+</script>
 </body>
