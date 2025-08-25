@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>時間壓制模組</title>
+  <style>
+    body { background-color: black; color: white; font-family: monospace; text-align: center; padding-top: 100px; font-size: 2rem; }
+  </style>
+  <script>
+    function updateTime() {
+      const now = new Date();
+      const h = String(now.getHours()).padStart(2, '0');
+      const m = String(now.getMinutes()).padStart(2, '0');
+      const s = String(now.getSeconds()).padStart(2, '0');
+      document.getElementById("clock").textContent = `目前時間：${h}:${m}:${s}`;
+    }
+    setInterval(updateTime, 1000);
+    window.onload = updateTime;
+  </script>
+</head>
+<body>
+  <div id="clock"></div>
+  <div>壓制仍在進行中。</div>
+  <div>下一波推進：21:00</div>
+</body>
+</html>
