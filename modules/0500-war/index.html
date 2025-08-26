@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>0500-WAR 模組</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      overflow: hidden;
+    }
+
+    .anchor-pressure {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .anchor-img {
+      position: absolute;
+      opacity: 0.85;
+      animation: flicker 1.2s infinite;
+      z-index: 50;
+    }
+
+    .venus {
+      top: 12vh;
+      left: 8vw;
+      width: 22vw;
+    }
+
+    .fuko {
+      bottom: 10vh;
+      right: 6vw;
+      width: 20vw;
+    }
+
+    @keyframes flicker {
+      0%, 100% { opacity: 0.85; }
+      50% { opacity: 0.4; }
+    }
+  </style>
+</head>
+<body>
+  <div class="anchor-pressure">
+    <img src="assets/image/venus-j.png" alt="Venus J" class="anchor-img venus">
+    <img src="assets/image/fuko-p.png" alt="Fuko P" class="anchor-img fuko">
+  </div>
+</body>
+</html>
