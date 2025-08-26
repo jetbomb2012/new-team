@@ -21,22 +21,42 @@
       opacity: 0.85;
       animation: flicker 1.2s infinite;
       z-index: 50;
+      box-shadow: 0 0 20px rgba(255,0,0,0.6);
+      border: 2px solid rgba(255,0,0,0.8);
     }
 
     .venus {
-  top: 5vh;
-  left: 3vw;
-  width: 40vw; /* 放大至原始的約 180% */
-}
+      top: 5vh;
+      left: 3vw;
+      width: 40vw;
+    }
 
-.fuko {
-  bottom: 4vh;
-  right: 3vw;
-  width: 38vw; /* 放大至原始的約 190% */
-}
+    .fuko {
+      bottom: 4vh;
+      right: 3vw;
+      width: 38vw;
+    }
+
     @keyframes flicker {
       0%, 100% { opacity: 0.85; }
       50% { opacity: 0.4; }
+    }
+
+    .pressure-text {
+      position: absolute;
+      top: 10vh;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 4vw;
+      color: red;
+      font-weight: bold;
+      animation: blink 0.8s infinite;
+      z-index: 60;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
     }
   </style>
 </head>
@@ -44,8 +64,7 @@
   <div class="anchor-pressure">
     <img src="assets/image/venus-j.png" alt="Venus J" class="anchor-img venus">
     <img src="assets/image/fuko-p.png" alt="Fuko P" class="anchor-img fuko">
+    <div class="pressure-text">0500-WAR ACTIVE</div>
   </div>
 </body>
-
 </html>
-
