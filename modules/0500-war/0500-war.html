@@ -1,46 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>0500-war</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>0500-WAR 24hr Broadcast</title>
   <style>
-    body { background: #000; color: #fff; font-family: sans-serif; margin: 0; }
-    .video-block { margin: 20px auto; width: 80%; }
-    video { width: 100%; border: 2px solid #f00; }
-    .label { text-align: center; margin-top: 10px; font-weight: bold; }
+    body {
+      margin: 0;
+      background-color: black;
+      overflow: hidden;
+    }
+    #videoContainer {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   </style>
 </head>
 <body>
-
-  <div class="video-block">
-    <video controls src="/modules/0500-war/anim/0500-war1.mp4"></video>
-    <div class="label">0500-war1 — Venus J</div>
+  <div id="videoContainer">
+    <video id="loopVideo" autoplay muted playsinline></video>
   </div>
 
-  <div class="video-block">
-    <video controls src="/modules/0500-war/anim/0500-war2.mp4"></video>
-    <div class="label">0500-war2 — Fuko P</div>
-  </div>
+  <script>
+    const video = document.getElementById('loopVideo');
+    const sources = [
+      '/assets/0500-war/anim/0500-war1.mp4',
+      '/assets/0500-war/anim/0500-war2.mp4',
+      '/assets/0500-war/anim/0500-war3.mp4',
+      '/assets/0500-war/anim/0500-war4.mp4',
+      '/assets/0500-war/anim/0500-war5.mp4',
+      '/assets/0500-war/anim/0500-war6.mp4'
+    ];
+    let index = 0;
 
-  <div class="video-block">
-    <video controls src="/modules/0500-war/anim/0500-war3.mp4"></video>
-    <div class="label">0500-war3 — Venus J</div>
-  </div>
+    function playNext() {
+      video.src = sources[index];
+      video.load();
+      video.play();
+      index = (index + 1) % sources.length;
+    }
 
-  <div class="video-block">
-    <video controls src="/modules/0500-war/anim/0500-war4.mp4"></video>
-    <div class="label">0500-war4 — Fuko P</div>
-  </div>
-
-  <div class="video-block">
-    <video controls src="/modules/0500-war/anim/0500-war5.mp4"></video>
-    <div class="label">0500-war5 — Venus J</div>
-  </div>
-
-  <div class="video-block">
-    <video controls src="/modules/0500-war/anim/0500-war6.mp4"></video>
-    <div class="label">0500-war6 — Fuko P</div>
-  </div>
-
+    document.addEventListener('DOMContentLoaded', playNext);
+    video.addEventListener('ended', playNext);
+  </script>
 </body>
 </html>
