@@ -2,55 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>0500-WAR 24hr Broadcast</title>
+  <title>0500-war</title>
   <style>
-    body {
-      margin: 0;
-      background-color: black;
-      overflow: hidden;
-    }
-    #videoContainer {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw; height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    body { margin: 0; background: black; display: flex; justify-content: center; align-items: center; height: 100vh; }
+    video { width: 100%; height: auto; }
   </style>
 </head>
 <body>
-  <div id="videoContainer">
-    <video id="loopVideo" autoplay muted playsinline></video>
-  </div>
+  <video id="warPlayer" autoplay muted playsinline></video>
 
   <script>
-    const video = document.getElementById('loopVideo');
-    const sources = [
-      '/assets/0500-war/anim/0500-war1.mp4',
-      '/assets/0500-war/anim/0500-war2.mp4',
-      '/assets/0500-war/anim/0500-war3.mp4',
-      '/assets/0500-war/anim/0500-war4.mp4',
-      '/assets/0500-war/anim/0500-war5.mp4',
-      '/assets/0500-war/anim/0500-war6.mp4'
+    const videos = [
+      'anim/0500-war1.mp4',
+      'anim/0500-war2.mp4',
+      'anim/0500-war3.mp4',
+      'anim/0500-war4.mp4',
+      'anim/0500-war5.mp4',
+      'anim/0500-war6.mp4'
     ];
     let index = 0;
+    const player = document.getElementById('warPlayer');
 
     function playNext() {
-      video.src = sources[index];
-      video.load();
-      video.play();
-      index = (index + 1) % sources.length;
+      player.src = videos[index];
+      player.load();
+      player.play();
+      index = (index + 1) % videos.length;
     }
 
-    document.addEventListener('DOMContentLoaded', playNext);
-    video.addEventListener('ended', playNext);
+    player.addEventListener('ended', playNext);
+    playNext();
   </script>
 </body>
 </html>
