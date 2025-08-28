@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>0500-WAR 24hr Broadcast</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      overflow: hidden;
+    }
+    #videoContainer {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div id="videoContainer">
+    <video id="loopVideo" autoplay muted playsinline></video>
+  </div>
+
+  <script>
+    const video = document.getElementById('loopVideo');
+    const sources = [
+      '/assets/0500-war/anim/0500-war1.mp4',
+      '/assets/0500-war/anim/0500-war2.mp4',
+      '/assets/0500-war/anim/0500-war3.mp4',
+      '/assets/0500-war/anim/0500-war4.mp4',
+      '/assets/0500-war/anim/0500-war5.mp4',
+      '/assets/0500-war/anim/0500-war6.mp4'
+    ];
+    let index = 0;
+
+    function playNext() {
+      video.src = sources[index];
+      video.load();
+      video.play();
+      index = (index + 1) % sources.length;
+    }
+
+    document.addEventListener('DOMContentLoaded', playNext);
+    video.addEventListener('ended', playNext);
+  </script>
+</body>
+</html>
