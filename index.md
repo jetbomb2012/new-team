@@ -14,33 +14,18 @@
 
 0500 戰術開場模組已部署，語音已啟動，壓力已展開。
 
-<div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top:20px;">
+<video controls width="180" style="max-width:33%; height:auto;" src="assets/video/vj.mp4">
+  您的瀏覽器不支援 HTML5 影片播放。
+</video>
 
-<!-- 模組 vj -->
-<div style="flex:1; min-width:280px; max-width:33%;">
-  <h3>🎙️ Venus J 開場模組</h3>
-  <video controls width="100%" src="assets/video/vj.mp4" poster="assets/images/vj-cover.png">
-    您的瀏覽器不支援 HTML5 影片播放。
-  </video>
-</div>
+---
 
-<!-- 模組 vj1 -->
-<div style="flex:1; min-width:280px; max-width:33%;">
-  <h3>📼 假出分聲明檔</h3>
-  <video controls width="100%" src="assets/video/vj1.mp4" poster="assets/images/vj1-cover.png">
-    您的瀏覽器不支援 HTML5 影片播放。
-  </video>
-</div>
+## 📼 假出分聲明檔｜vj1.mp4
 
-<!-- 模組 vj2 -->
-<div style="flex:1; min-width:280px; max-width:33%;">
-  <h3>📼 模組 vj2｜待命部署</h3>
-  <video controls width="100%" src="assets/video/vj2.mp4" poster="assets/images/vj2-cover.png">
-    您的瀏覽器不支援 HTML5 影片播放。
-  </video>
-</div>
-
-</div>
+<video width="100%" controls poster="assets/images/vj1-cover.png">
+  <source src="assets/video/vj1.mp4" type="video/mp4">
+  您的瀏覽器不支援 HTML5 影片播放。
+</video>
 
 ---
 
